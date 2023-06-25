@@ -27,7 +27,7 @@
 }
 
 .bg-header {
-   background: url('/public/images/bg-desktop-light.jpg');
+   background: url('../public/images/bg-desktop-light.jpg');
    background-repeat: no-repeat;
    background-position: center;
    @apply w-full h-[250px];

@@ -17,7 +17,7 @@ watch(
 );
 </script>
 <template>
-   <ul class="rounded-t-lg overflow-hidden">
+   <ul class="rounded-t-lg overflow-hidden shadow-lg">
       <draggable v-model="draggableTodos">
          <li
             v-for="todo in draggableTodos"
@@ -39,7 +39,7 @@ watch(
                   />
                   <img
                      v-show="todo.isDone"
-                     src="images/icon-check.svg"
+                     src="/images/icon-check.svg"
                      alt="check icon"
                   />
                </div>
