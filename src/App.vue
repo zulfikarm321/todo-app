@@ -2,6 +2,7 @@
 // IMPORT FIELD
 import { ref, watch, onMounted, computed } from 'vue';
 import { getItem, setItem } from './utils/localStorageUtils';
+import { data } from './utils/InitialData';
 
 import HeaderComp from './components/HeaderComp.vue';
 import InputTodo from './components/InputTodo.vue';
@@ -9,8 +10,8 @@ import TodoList from './components/TodoList.vue';
 import FooterComp from './components/FooterComp.vue';
 
 // VARIABLE
-const todos = ref([]);
-const activeOption = ref('All');
+const todos = ref(['Complet']);
+const activeOption = ref([]);
 
 // COMPUTED
 const filteredTodos = computed(() => {
@@ -57,6 +58,8 @@ onMounted(() => {
    const todosLocalStorage = getItem('todos');
    if (todosLocalStorage) {
       todos.value = todosLocalStorage;
+   } else {
+      todos.value = data;
    }
 
    const activeOptionStorage = getItem('activeOption');
