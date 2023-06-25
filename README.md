@@ -1,6 +1,6 @@
 ### Links
 
--  Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/interactive-comments-section-with-vue-js-and-tailwind-css-vtxYeeAPYK)
+-  Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/todo-app-solution-with-vue-js-and-tailwind-css-ClLRgtayBG)
 -  Live Site URL: [live page](https://todo-app-git-main-zulfikarm321.vercel.app/)
 
 ### The challenge
