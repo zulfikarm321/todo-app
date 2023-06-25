@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+   outline: 1px solid red;
+} */
+
+::root {
+   /* ### Light Theme */
+
+   -verylightgray: hsl(0, 0%, 98%);
+   -verylightgrayishblue: hsl(236, 33%, 92%);
+   -lightgrayishblue: hsl(233, 11%, 84%);
+   -darkgrayishblue: hsl(236, 9%, 61%);
+   -verydarkgrayishblue: hsl(235, 19%, 35%);
+
+   /* ### Dark Theme */
+
+   -verydarkblue: hsl(235, 21%, 11%);
+   -verydarkdesaturatedblue: hsl(235, 24%, 19%);
+   -lightgrayishblue: hsl(234, 39%, 85%);
+   -lightgrayishblue: hsl(236, 33%, 92%);
+   -darkgrayishblue: hsl(234, 11%, 52%);
+   -verydarkgrayishblue: hsl(233, 14%, 35%);
+   -verydarkgrayishblue: hsl(237, 14%, 26%);
+}
+
+.bg-header {
+   background: url('/public/images/bg-desktop-light.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   @apply w-full h-[250px];
+}
+
+.bg-body {
+   @apply dark:bg-slate-900;
+}
+
+.card {
+   @apply py-5 px-6 
+   bg-white overflow-hidden shadow-md text-gray-500 font-semibold 
+   dark:bg-slate-800 dark:text-slate-200;
+}
+
+.circle {
+   @apply w-[25px] h-[25px] rounded-full border cursor-pointer;
+}
