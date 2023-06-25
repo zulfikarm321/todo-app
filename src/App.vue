@@ -10,7 +10,7 @@ import TodoList from './components/TodoList.vue';
 import FooterComp from './components/FooterComp.vue';
 
 // VARIABLE
-const todos = ref(['Complet']);
+const todos = ref([]);
 const activeOption = ref([]);
 
 // COMPUTED
