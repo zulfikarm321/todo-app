@@ -69,7 +69,7 @@ onMounted(() => {
 <template>
    <div>
       <div class="bg-header absolute top-0 left-0 -z-10"></div>
-      <div class="min-h-screen max-w-xl mx-auto pt-[20vh] px-[10px]">
+      <div class="min-h-screen max-w-xl mx-auto py-[10vh] px-[10px]">
          <HeaderComp />
          <InputTodo @onEnter="addTodo" />
          <TodoList :filteredTodos="filteredTodos" @onDelete="deleteTodo" />

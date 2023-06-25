@@ -27,10 +27,13 @@
 }
 
 .bg-header {
-   background: url('../public/images/bg-desktop-light.jpg');
+   background: url('../public/images/bg-mobile-light.jpg');
    background-repeat: no-repeat;
    background-position: center;
-   @apply w-full h-[250px];
+   background-size: cover;
+   @apply w-full h-[300px]
+   dark:bg-[url('../public/images/bg-mobile-dark.jpg')]
+   sm:bg-[url('../public/images/bg-desktop-light.jpg')] sm:dark:bg-[url('../public/images/bg-desktop-dark.jpg')];
 }
 
 .bg-body {
